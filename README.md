@@ -1,29 +1,37 @@
-# README #
+# Description #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+У текущего тестового задания есть только общее описание требований, конкретные детали реализации остаются на усмотрение разработчика.
 
-### What is this repository for? ###
+Задача: спроектировать и разработать API для системы опросов пользователей.
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+Функционал для администратора системы:
 
-### How do I get set up? ###
+- авторизация в системе (регистрация не нужна)
+- добавление/изменение/удаление опросов. Атрибуты опроса: название, дата старта, дата окончания, описание. После создания поле "дата старта" у опроса менять нельзя
+- добавление/изменение/удаление вопросов в опросе. Атрибуты вопросов: текст вопроса, тип вопроса (ответ текстом, ответ с выбором одного варианта, ответ с выбором нескольких вариантов)
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+Функционал для пользователей системы:
 
-### Contribution guidelines ###
+- получение списка активных опросов
+- прохождение опроса: в качестве идентификатора пользователя в API передаётся числовой ID, по которому сохраняются ответы пользователя на вопросы; один пользователь может участвовать в любом количестве опросов
+- получение пройденных пользователем опросов с детализацией по ответам (что выбрано) по ID уникальному пользователя
 
-* Writing tests
-* Code review
-* Other guidelines
+Использовать следующие технологии: Django 2.2.10, Django REST framework.
 
-### Who do I talk to? ###
+Результат выполнения задачи:
+- исходный код приложения в github (только на github, публичный репозиторий)
+- инструкция по разворачиванию приложения (в docker или локально)
+- документация по API
 
-* Repo owner or admin
-* Other community or team contact
+### Installation ###
+
+- pip install djangorestframework
+- pip install django-cors-headers
+
+### Links ###
+
+* REST- API- documentation: []
+
+### Реализация ###
+* New admins are made via django-admin 
+* Authorization: like header Authentication: Token 9054f7aa9305e012b3c2300408c3dfdf390fcddf
