@@ -30,8 +30,8 @@
 
 ### Links ###
 
-* REST- API- documentation: []
+* REST- API- documentation: [https://documenter.getpostman.com/view/10907272/Szmjyuhw]
 
-### Реализация ###
+### Realization ###
 * New admins are made via django-admin 
 * Authorization: like header Authentication: Token 9054f7aa9305e012b3c2300408c3dfdf390fcddf
